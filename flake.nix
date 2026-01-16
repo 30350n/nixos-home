@@ -22,8 +22,8 @@
         disko,
         ...
     } @ flake-inputs: {
-        nixosConfigurations.default = self.nixosConfigurations.nixos-cloud;
-        nixosConfigurations.nixos-cloud = nixpkgs.lib.nixosSystem {
+        nixosConfigurations.default = self.nixosConfigurations.nixos-home;
+        nixosConfigurations.nixos-home = nixpkgs.lib.nixosSystem {
             specialArgs = {
                 inherit flake-inputs;
                 inherit (nixos-core) lib;
