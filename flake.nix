@@ -13,6 +13,11 @@
             url = "github:nix-community/disko";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        autoaspm = {
+            url = "git+https://git.notthebe.ee/notthebee/AutoASPM";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = {
@@ -20,6 +25,7 @@
         nixpkgs,
         nixos-core,
         disko,
+        autoaspm,
         ...
     } @ flake-inputs: {
         nixosConfigurations.default = self.nixosConfigurations.nixos-home;
@@ -31,6 +37,7 @@
             modules = [
                 nixos-core.nixosModules.nixos-core
                 disko.nixosModules.disko
+                autoaspm.nixosModules.autoaspm
                 ./host
                 ./modules
             ];
