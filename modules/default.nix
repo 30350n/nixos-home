@@ -19,6 +19,8 @@
         settings.PermitRootLogin = "prohibit-password";
     };
 
+    nixos-core.impermanence.persist.directories = ["/root/.vscodium-server"];
+
     users.mutableUsers = false;
     users.users.root.hashedPasswordFile = "/persist/passwords/root";
 
