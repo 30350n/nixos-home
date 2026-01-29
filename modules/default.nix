@@ -12,6 +12,8 @@
         nixd
     ];
 
+    hardware.graphics.enable = true;
+
     services.openssh = {
         enable = true;
         settings.PermitRootLogin = "prohibit-password";
