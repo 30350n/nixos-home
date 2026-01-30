@@ -16,6 +16,14 @@
 
     hardware.graphics.enable = true;
 
+    services.caddy = {
+        enable = true;
+        globalConfig = ''
+            local_certs
+        '';
+    };
+    networking.firewall.allowedTCPPorts = [80 443];
+
     services.openssh = {
         enable = true;
         settings.PermitRootLogin = "prohibit-password";
