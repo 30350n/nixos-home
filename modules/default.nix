@@ -3,7 +3,9 @@
     pkgs,
     ...
 }: {
-    imports = lib.nixos-core.autoImport ./.;
+    imports =
+        lib.nixos-core.autoImport ./.
+        ++ lib.nixos-core.autoImport ./services;
 
     boot.loader.systemd-boot.enable = true;
 
