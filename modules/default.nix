@@ -1,4 +1,5 @@
 {
+    config,
     lib,
     pkgs,
     ...
@@ -29,7 +30,13 @@
         settings.PermitRootLogin = "prohibit-password";
     };
 
-    nixos-core.impermanence.persist.directories = ["/root/.vscodium-server"];
+    nixos-core.impermanence.persist.directories = [
+        "/root/.vscodium-server"
+        {
+            directory = "/var/lib/caddy";
+            inherit (config.services.caddy) user;
+        }
+    ];
 
     users.mutableUsers = false;
     users.users.root.hashedPasswordFile = "/persist/passwords/root";
