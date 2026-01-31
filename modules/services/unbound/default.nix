@@ -39,6 +39,8 @@
         allowedUDPPorts = [53];
     };
 
+    services.resolved.enable = false;
+
     nixos-core.impermanence.persist.directories = [
         {
             directory = "/var/lib/unbound";
