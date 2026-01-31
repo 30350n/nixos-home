@@ -4,7 +4,8 @@ html {
 }
 
 :root {
-    --font-weight-bold: 600;
+    --font-weight-thin: 400;
+    --font-weight-medium: 600;
     --text-2xl: 1.4rem;
 }
 
