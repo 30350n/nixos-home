@@ -22,6 +22,7 @@
             };
 
             default_config = {};
+            homeassistant.time_zone = null;
 
             "automation ui" = "!include automations.yaml";
             "script ui" = "!include scripts.yaml";
