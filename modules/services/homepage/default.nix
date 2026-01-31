@@ -43,6 +43,27 @@
 
         services = lib.mkAfter [
             {
+                Services = let
+                    api-keys =
+                        if (builtins.pathExists ./api-keys.nix)
+                        then (import ./api-keys.nix)
+                        else lib.genAttrs ["home-assistant"] (_: "");
+                in [
+                    {
+                        "Home Assistant" = rec {
+                            icon = "home-assistant.svg";
+                            href = "https://home-assistant.home.internal";
+                            siteMonitor = href;
+                            widget = {
+                                type = "homeassistant";
+                                url = href;
+                                key = api-keys.home-assistant;
+                            };
+                        };
+                    }
+                ];
+            }
+            {
                 Administration = [
                     {
                         Cockpit = rec {
@@ -73,12 +94,8 @@
             statusStyle = "dot";
 
             layout = [
-                {
-                    Administration = {
-                        style = "row";
-                        columns = 3;
-                    };
-                }
+                {Services.style = "column";}
+                {Administration.style = "column";}
             ];
         };
 
