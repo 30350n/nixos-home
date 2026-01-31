@@ -28,7 +28,17 @@ div#footer {
     display: none;
 }
 
-a[aria-label="avm-fritzbox.svg"]>img {
+a.service-icon {
+    width: calc(var(--spacing) * 9) !important;
+}
+
+a.service-icon>img {
+    width: 26px !important;
+    height: 26px !important;
+}
+
+a.service-icon[aria-label="avm-fritzbox.svg"]>img {
+    width: 32px !important;
     height: 22px !important;
     object-position: right;
 }
