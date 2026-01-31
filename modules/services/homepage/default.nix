@@ -45,6 +45,13 @@
             {
                 Administration = [
                     {
+                        Cockpit = rec {
+                            icon = "cockpit-light.svg";
+                            href = "https://cockpit.home.internal";
+                            siteMonitor = href;
+                        };
+                    }
+                    {
                         "FRITZ!Box" = rec {
                             icon = "avm-fritzbox.svg";
                             href = "http://fritz.box";
