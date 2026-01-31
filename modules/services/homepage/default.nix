@@ -61,6 +61,13 @@
                             };
                         };
                     }
+                    {
+                        "Zigbee2MQTT" = rec {
+                            icon = "zigbee2mqtt.svg";
+                            href = "https://zigbee2mqtt.home.internal";
+                            siteMonitor = href;
+                        };
+                    }
                 ];
             }
             {

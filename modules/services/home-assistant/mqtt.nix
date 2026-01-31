@@ -20,8 +20,17 @@
                 adapter = "ember";
                 port = "/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0";
             };
+            frontend.enabled = true;
         };
     };
+
+    services.caddy.virtualHosts."zigbee2mqtt.home.internal".extraConfig = ''
+        reverse_proxy localhost:8080
+    '';
+
+    services.unbound.settings.server.local-data = [
+        ''"zigbee2mqtt.home.internal. IN A 192.168.178.2"''
+    ];
 
     nixos-core.impermanence.persist.directories = [
         {
