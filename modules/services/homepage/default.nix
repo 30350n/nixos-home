@@ -71,6 +71,21 @@
                 ];
             }
             {
+                Devices = [
+                    {
+                        "Voron 2.4" = rec {
+                            icon = "voron.svg";
+                            href = "http://fluiddpi.local";
+                            siteMonitor = href;
+                            widget = {
+                                type = "moonraker";
+                                url = href;
+                            };
+                        };
+                    }
+                ];
+            }
+            {
                 Administration = [
                     {
                         Cockpit = rec {
@@ -102,6 +117,7 @@
 
             layout = [
                 {Services.style = "column";}
+                {Devices.style = "column";}
                 {Administration.style = "column";}
             ];
         };

@@ -43,3 +43,7 @@ a.service-icon[aria-label="avm-fritzbox.svg"]>img {
     height: 22px !important;
     object-position: right;
 }
+
+details:has(>summary) {
+    display: none;
+}
