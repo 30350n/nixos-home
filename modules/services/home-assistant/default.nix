@@ -10,6 +10,7 @@
 
             "airgradient"
             "mqtt"
+            "sleep_as_android"
         ];
 
         config = {
@@ -29,6 +30,8 @@
             "scene ui" = "!include scenes.yaml";
         };
     };
+
+    networking.firewall.allowedTCPPorts = [config.services.home-assistant.config.http.server_port];
 
     systemd.tmpfiles.rules = let
         configDir = config.services.home-assistant.configDir;
