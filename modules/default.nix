@@ -1,5 +1,4 @@
 {
-    config,
     lib,
     pkgs,
     ...
@@ -17,26 +16,12 @@
 
     hardware.graphics.enable = true;
 
-    services.caddy = {
-        enable = true;
-        globalConfig = ''
-            local_certs
-        '';
-    };
-    networking.firewall.allowedTCPPorts = [80 443];
-
     services.openssh = {
         enable = true;
         settings.PermitRootLogin = "prohibit-password";
     };
 
-    nixos-core.impermanence.persist.directories = [
-        "/root/.vscodium-server"
-        {
-            directory = "/var/lib/caddy";
-            inherit (config.services.caddy) user;
-        }
-    ];
+    nixos-core.impermanence.persist.directories = ["/root/.vscodium-server"];
 
     users.mutableUsers = false;
     users.users.root.hashedPasswordFile = "/persist/passwords/root";
