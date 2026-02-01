@@ -1,5 +1,6 @@
 {
     config,
+    flake-inputs,
     pkgs,
     ...
 }: {
@@ -19,7 +20,9 @@
                     "127.0.0.0/8 allow"
                     "::1/128 allow"
                 ];
-                include = "${pkgs.callPackage ./adblock.nix {}}";
+                include = [
+                    "${flake-inputs.stevenblack-hosts.packages.${pkgs.system}.unbound.fakenews}"
+                ];
 
                 local-zone = ''"home.internal." static'';
                 local-data = [''"home.internal. IN A 192.168.178.2"''];

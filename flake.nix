@@ -18,6 +18,11 @@
             url = "git+https://git.notthebe.ee/notthebee/AutoASPM";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        stevenblack-hosts = {
+            url = "github:30350n/hosts/unbound-confs-rework";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = {

@@ -117,11 +117,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1769432298,
-        "narHash": "sha256-N1osRoI6CGLlVmKpGITEnJmdaeNSCeU1nS5wqVkOcpE=",
+        "lastModified": 1771510136,
+        "narHash": "sha256-6Kmjr2EueSuANiDIXCpQbRCuNyqVoKNQuMdNBVUMlMU=",
         "owner": "30350n",
         "repo": "nixos-core",
-        "rev": "17b143f333f99d3b708617d6ecddadb902e16647",
+        "rev": "117e09a065943ed74ba70c2aa02b26a9320f9873",
         "type": "github"
       },
       "original": {
@@ -168,7 +168,29 @@
         "disko": "disko",
         "nixos-core": "nixos-core",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "stevenblack-hosts": "stevenblack-hosts"
+      }
+    },
+    "stevenblack-hosts": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1771677327,
+        "narHash": "sha256-e1sZQkmV5km0STa/HrVi1nZLWnRCO8k17Y+V8uXeTBc=",
+        "owner": "30350n",
+        "repo": "hosts",
+        "rev": "7681e2b342d607ab8e36068083cb99ca835ae84b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "30350n",
+        "ref": "unbound-confs-rework",
+        "repo": "hosts",
+        "type": "github"
       }
     }
   },
