@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+    config,
+    pkgs,
+    ...
+}: {
     services.mosquitto = {
         enable = true;
         listeners = [
@@ -12,6 +16,7 @@
 
     services.zigbee2mqtt = {
         enable = true;
+        package = pkgs.unstable.zigbee2mqtt;
         settings = {
             homeassistant.enabled = true;
             permit_join = true;

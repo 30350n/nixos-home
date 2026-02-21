@@ -1,4 +1,5 @@
 {
+    flake-inputs,
     lib,
     pkgs,
     ...
@@ -22,6 +23,8 @@
     };
 
     nixos-core.impermanence.persist.directories = ["/root/.vscodium-server"];
+
+    nixpkgs.overlays = [flake-inputs.nixos-core.overlays.unstable];
 
     users.mutableUsers = false;
     users.users.root.hashedPasswordFile = "/persist/passwords/root";
