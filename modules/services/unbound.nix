@@ -24,8 +24,14 @@
                     "${flake-inputs.stevenblack-hosts.packages.${pkgs.system}.unbound}/fakenews"
                 ];
 
-                local-zone = ''"home.internal." static'';
-                local-data = [''"home.internal. IN A 192.168.178.2"''];
+                local-zone = [
+                    ''"home.internal." static''
+                    ''"desktop.internal." static''
+                ];
+                local-data = [
+                    ''"home.internal. IN A 192.168.178.2"''
+                    ''"desktop.internal. IN A 192.168.178.10"''
+                ];
             };
 
             forward-zone = [

@@ -137,11 +137,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1776095140,
-        "narHash": "sha256-+Sf8K9vFqIG6CJK2+9/LKaEwX7cPjPANzvcFVD3lM/I=",
+        "lastModified": 1776243094,
+        "narHash": "sha256-EGYEtr/k8y/BfN0zGMj6xY06ZzYAIaeu1DhJMNxHBZ8=",
         "owner": "30350n",
         "repo": "nixos-core",
-        "rev": "b6eaa57638876e5099386b5387fa9d72e0ac0e73",
+        "rev": "7e77be8f323cb429940114602467af08ee2e523a",
         "type": "github"
       },
       "original": {
