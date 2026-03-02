@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+    config,
+    lib,
+    ...
+}: {
     services.caddy = {
         enable = true;
 
@@ -22,6 +26,8 @@
             }
         '';
     };
+
+    services.nginx.enable = lib.mkForce false;
 
     services.unbound.settings.server.local-data = [''"cert.home.internal. IN A 192.168.178.2"''];
 
