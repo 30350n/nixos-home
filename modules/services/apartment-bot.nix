@@ -22,6 +22,7 @@
                 "Lichtenrade"
                 "Lichterfelde"
                 "Marzahn"
+                "Neu-Hohenschönhausen"
                 "Schönefeld"
                 "Siemensstadt"
                 "Spandau"
