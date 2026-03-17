@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "apartment-bot": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1773829412,
+        "narHash": "sha256-OV33x1MegxLlKENkcAI0iUUGMdz8P/pS31/r4zbDB9A=",
+        "owner": "bobbe",
+        "repo": "apartment-bot",
+        "rev": "3ec5176ba0607b1c041c2f2754eaa4cb013728a4",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "bobbe",
+        "repo": "apartment-bot",
+        "type": "gitlab"
+      }
+    },
     "autoaspm": {
       "inputs": {
         "nixpkgs": [
@@ -164,6 +184,7 @@
     },
     "root": {
       "inputs": {
+        "apartment-bot": "apartment-bot",
         "autoaspm": "autoaspm",
         "disko": "disko",
         "nixos-core": "nixos-core",

@@ -23,6 +23,11 @@
             url = "github:30350n/hosts/unbound-confs-rework";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        apartment-bot = {
+            url = "gitlab:bobbe/apartment-bot";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = {
@@ -31,6 +36,7 @@
         nixos-core,
         disko,
         autoaspm,
+        apartment-bot,
         ...
     } @ flake-inputs: {
         nixosConfigurations.default = self.nixosConfigurations.nixos-home;
@@ -43,6 +49,7 @@
                 nixos-core.nixosModules.nixos-core
                 disko.nixosModules.disko
                 autoaspm.nixosModules.autoaspm
+                apartment-bot.nixosModules.apartment-bot
                 ./host
                 ./modules
             ];
