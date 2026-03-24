@@ -43,4 +43,11 @@
     services.unbound.settings.server.local-data = [
         ''"apartment-bot.home.internal. IN A 192.168.178.2"''
     ];
+
+    nixos-core.impermanence.persist.directories = [
+        {
+            directory = "/var/lib/apartment-bot";
+            inherit (config.services.apartment-bot) user;
+        }
+    ];
 }

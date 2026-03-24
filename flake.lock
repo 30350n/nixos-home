@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1773851878,
-        "narHash": "sha256-fjoa5knJapos+bxjOX5PeOgUuhMIrv6ghlHt8DrsEfI=",
+        "lastModified": 1774365832,
+        "narHash": "sha256-wuOYmGkXQc69myYDXScHyNk9ABJPkcBY5IZQx/mPTsI=",
         "owner": "bobbe",
         "repo": "apartment-bot",
-        "rev": "d87ed94f4e2d661f7422a5dfd195678694c7b5d2",
+        "rev": "1ab90bc32ba81192a0b77dddc2b3023fb6b96b78",
         "type": "gitlab"
       },
       "original": {
