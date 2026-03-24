@@ -21,7 +21,7 @@
                     "::1/128 allow"
                 ];
                 include = [
-                    "${flake-inputs.stevenblack-hosts.packages.${pkgs.system}.unbound.fakenews}"
+                    "${flake-inputs.stevenblack-hosts.packages.${pkgs.system}.unbound}/fakenews"
                 ];
 
                 local-zone = ''"home.internal." static'';
