@@ -1,28 +1,13 @@
-{
-    lib,
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     services.ddclient = {
         enable = true;
-        package = pkgs.ddclient.overrideAttrs (finalAttrs: prevAttrs: let
-            myPerl = pkgs.perl.withPackages (ps: [ps.JSONPP ps.JSON]);
-        in {
+        package = pkgs.ddclient.overrideAttrs (finalAttrs: prevAttrs: {
             src = pkgs.fetchFromGitHub {
-                owner = "lecram89";
+                owner = "cr3";
                 repo = "ddclient";
-                rev = "b5de789be94bd50691e95af59ddb5fa75e6eeb0d";
-                sha256 = "aIfpDAKGAiA4qQ/IU22sc9OkGlQfkOpx17dQ913ZxMw=";
+                rev = "317584302907f21aceac49f2927804a5ac256052";
+                sha256 = "7kovqy4ur2CALXK7QTOt+wBc/vL4uWPbQrnLMWRMyV4=";
             };
-
-            buildInputs = with pkgs; [
-                curl
-                myPerl
-            ];
-
-            configureFlags = [
-                "--with-perl=${lib.getExe myPerl}"
-            ];
         });
         protocol = "hetznercloud";
         passwordFile = "/persist/passwords/hetzner";
