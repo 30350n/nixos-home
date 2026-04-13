@@ -62,6 +62,19 @@
                         };
                     }
                     {
+                        "Immich" = rec {
+                            icon = "immich.svg";
+                            href = "https://immich.home.internal";
+                            siteMonitor = href;
+                            widget = {
+                                type = "immich";
+                                url = href;
+                                key = api-keys.immich;
+                                version = 2;
+                            };
+                        };
+                    }
+                    {
                         "InvenTree" = rec {
                             icon = "inventree.svg";
                             href = "https://inventree.home.internal";
