@@ -1,6 +1,7 @@
 {
     config,
     lib,
+    pkgs,
     ...
 }: {
     services.homepage-dashboard = {
@@ -103,6 +104,17 @@
                             };
                         };
                     }
+                    {
+                        "Artillery Genius" = rec {
+                            icon = "/icons/artillery-genius.svg";
+                            href = "http://nixos-artillery-genius.local";
+                            siteMonitor = href;
+                            widget = {
+                                type = "moonraker";
+                                url = href;
+                            };
+                        };
+                    }
                 ];
             }
             {
@@ -141,6 +153,19 @@
                 {Administration.style = "column";}
             ];
         };
+
+        #package = pkgs.runCommandLocal "homepage" {} ''
+        #    cp -r ${pkgs.homepage-dashboard} $out
+        #    chmod +w $out/share/homepage/public
+        #    cp -r ${./icons} $out/share/homepage/public/icons
+        #'';
+        package = pkgs.homepage-dashboard.overrideAttrs (finalAttrs: prevAttrs: {
+            postInstall =
+                (prevAttrs.postInstall or "")
+                + ''
+                    ln -s ${./icons} $out/share/homepage/public/icons
+                '';
+        });
 
         customCSS = builtins.readFile ./custom.css;
     };
