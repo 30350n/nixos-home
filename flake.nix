@@ -1,7 +1,7 @@
 {
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
-        nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+        nixpkgs-unstable.url = "github:30350n/nixpkgs/inventree-1.3.0";
 
         nixos-core = {
             url = "github:30350n/nixos-core";
@@ -28,6 +28,8 @@
             url = "gitlab:bobbe/apartment-bot";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        nixpkgs-inventree.url = "github:kurogeek/nixpkgs/inventree";
     };
 
     outputs = {

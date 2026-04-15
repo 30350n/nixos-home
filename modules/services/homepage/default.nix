@@ -62,6 +62,13 @@
                         };
                     }
                     {
+                        "InvenTree" = rec {
+                            icon = "inventree.svg";
+                            href = "https://inventree.home.internal";
+                            siteMonitor = href;
+                        };
+                    }
+                    {
                         "Zigbee2MQTT" = rec {
                             icon = "zigbee2mqtt.svg";
                             href = "https://zigbee2mqtt.home.internal";
