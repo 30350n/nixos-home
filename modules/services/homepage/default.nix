@@ -51,6 +51,13 @@
                         else lib.genAttrs ["home-assistant"] (_: "");
                 in [
                     {
+                        "Fluidd" = rec {
+                            icon = "fluidd.svg";
+                            href = "https://${config.services.fluidd.hostName}";
+                            siteMonitor = href;
+                        };
+                    }
+                    {
                         "Home Assistant" = rec {
                             icon = "home-assistant.svg";
                             href = "https://home-assistant.home.internal";
@@ -92,26 +99,28 @@
                 ];
             }
             {
-                Devices = [
+                Devices = let
+                    fluiddUrl = "https://${config.services.fluidd.hostName}";
+                in [
                     {
                         "Voron 2.4" = rec {
                             icon = "voron.svg";
-                            href = "http://fluiddpi.local";
-                            siteMonitor = href;
+                            href = "${fluiddUrl}/?printer=${builtins.hashString "md5" siteMonitor}";
+                            siteMonitor = "${fluiddUrl}/voron";
                             widget = {
                                 type = "moonraker";
-                                url = href;
+                                url = siteMonitor;
                             };
                         };
                     }
                     {
                         "Artillery Genius" = rec {
                             icon = "/icons/artillery-genius.svg";
-                            href = "http://nixos-artillery-genius.local";
-                            siteMonitor = href;
+                            href = "${fluiddUrl}/?printer=${builtins.hashString "md5" siteMonitor}";
+                            siteMonitor = "${fluiddUrl}/genius";
                             widget = {
                                 type = "moonraker";
-                                url = href;
+                                url = siteMonitor;
                             };
                         };
                     }
