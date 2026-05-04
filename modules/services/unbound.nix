@@ -27,10 +27,16 @@
                 local-zone = [
                     ''"home.internal." static''
                     ''"desktop.internal." static''
+                    ''"thinkpad.internal." static''
+                    ''"voron2.internal." static''
+                    ''"genius.internal." static''
                 ];
                 local-data = [
                     ''"home.internal. IN A 192.168.178.2"''
                     ''"desktop.internal. IN A 192.168.178.10"''
+                    ''"thinkpad.internal. IN A 192.168.178.11"''
+                    ''"voron2.internal. IN A 192.168.178.12"''
+                    ''"genius.internal. IN A 192.168.178.13"''
                 ];
             };
 

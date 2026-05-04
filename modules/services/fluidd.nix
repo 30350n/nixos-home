@@ -5,8 +5,8 @@
     ...
 }: let
     printers = {
-        genius = "nixos-artillery-genius.local";
-        voron = "fluiddpi.local";
+        genius = "genius.internal";
+        voron = "voron2.internal";
     };
 in {
     services.fluidd = rec {
