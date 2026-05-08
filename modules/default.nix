@@ -13,6 +13,7 @@
     environment.systemPackages = with pkgs; [
         nettools
         nixd
+        restic
     ];
 
     hardware.graphics.enable = true;
