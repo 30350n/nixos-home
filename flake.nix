@@ -1,6 +1,6 @@
 {
     inputs = {
-        nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+        nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
         nixpkgs-unstable.url = "github:30350n/nixpkgs/inventree-1.3.0";
 
         nixos-core = {
@@ -20,7 +20,7 @@
         };
 
         stevenblack-hosts = {
-            url = "github:30350n/hosts/unbound-confs-rework";
+            url = "github:stevenblack/hosts";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 

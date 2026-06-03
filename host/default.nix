@@ -4,6 +4,8 @@
         (import ./disko.nix {devices = import ./devices.nix;})
     ];
 
+    boot.zfs.forceImportRoot = false;
+
     networking.hostId = import ./host-id.nix;
 
     nixos-core.impermanence = {

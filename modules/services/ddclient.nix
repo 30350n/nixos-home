@@ -3,13 +3,13 @@
         enable = true;
         package = pkgs.ddclient.overrideAttrs (finalAttrs: prevAttrs: {
             src = pkgs.fetchFromGitHub {
-                owner = "cr3";
+                owner = "ddclient";
                 repo = "ddclient";
-                rev = "317584302907f21aceac49f2927804a5ac256052";
-                sha256 = "7kovqy4ur2CALXK7QTOt+wBc/vL4uWPbQrnLMWRMyV4=";
+                rev = "533f1f3ef4bda2fefc66ca704175158b9f59e0bc";
+                sha256 = "u0ve3mttU9CkstfQmwER+MysIlA4YIWL53OQxgICmOo=";
             };
         });
-        protocol = "hetznercloud";
+        protocol = "hetzner";
         passwordFile = "/persist/passwords/hetzner";
         zone = "30350n.de";
         domains = [

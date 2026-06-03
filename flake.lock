@@ -47,11 +47,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777713215,
-        "narHash": "sha256-8GzXDOXckDWwST8TY5DbwYFjdvQLlP7K9CLSVx6iTTo=",
+        "lastModified": 1780290312,
+        "narHash": "sha256-eTAlX0CwgB84Ts3GaBd944A3DRXVMzgA0EqroZBISUo=",
         "owner": "nix-community",
         "repo": "disko",
-        "rev": "63b4e7e6cf75307c1d26ac3762b886b5b0247267",
+        "rev": "115e5211780054d8a890b41f0b7734cafad54dfe",
         "type": "github"
       },
       "original": {
@@ -69,11 +69,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1778829034,
-        "narHash": "sha256-rezIgc+Dye1hBFBOW+yGXhNhoj/FpQQO+guZu904TVg=",
+        "lastModified": 1779977892,
+        "narHash": "sha256-3vSlWyaWfD/eOuDni1KU/zw98bTuOIAacyyHbDtMUpE=",
         "owner": "mic92",
         "repo": "fast-nix-gc",
-        "rev": "6c6c4e7edaf7e58c4d549d3cda3b74ebddb240b1",
+        "rev": "4e0bf6aa6dd2b709dfd05a2df74b6e25f1619a4d",
         "type": "github"
       },
       "original": {
@@ -91,11 +91,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747978958,
-        "narHash": "sha256-pQQnbxWpY3IiZqgelXHIe/OAE/Yv4NSQq7fch7M6nXQ=",
+        "lastModified": 1768598210,
+        "narHash": "sha256-kkgA32s/f4jaa4UG+2f8C225Qvclxnqs76mf8zvTVPg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "7419250703fd5eb50e99bdfb07a86671939103ea",
+        "rev": "c47b2cc64a629f8e075de52e4742de688f930dc6",
         "type": "github"
       },
       "original": {
@@ -113,11 +113,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1767822991,
-        "narHash": "sha256-iyrn9AcPZCoyxX4OT8eMkBsjG7SRUQXXS/V1JzxS7rA=",
+        "lastModified": 1769548169,
+        "narHash": "sha256-03+JxvzmfwRu+5JafM0DLbxgHttOQZkUtDWBmeUkN8Y=",
         "owner": "nix-community",
         "repo": "impermanence",
-        "rev": "82e5bc4508cab9e8d5a136626276eb5bbce5e9c5",
+        "rev": "7b1d382faf603b6d264f58627330f9faa5cba149",
         "type": "github"
       },
       "original": {
@@ -134,11 +134,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1764475780,
-        "narHash": "sha256-77jL5H5x51ksLiOUDjY0ZK8e2T4ZXLhj3ap8ETvknWI=",
+        "lastModified": 1779604987,
+        "narHash": "sha256-ZQ5z+fVhxYKtIFwtqGp5O0PD84BM1riASvqDaN5Xs+s=",
         "owner": "nix-community",
         "repo": "nix-index-database",
-        "rev": "5a3ff8c1a09003f399f43d5742d893c0b1ab8af0",
+        "rev": "8fba98c80b48fa013820e0163c5096922fea4ddd",
         "type": "github"
       },
       "original": {
@@ -160,11 +160,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779551507,
-        "narHash": "sha256-kjkC1U1qQM0Q+cOZoXvvi0gO+9iMPr1/AS73n6zwxRY=",
+        "lastModified": 1780501301,
+        "narHash": "sha256-0snDsuPDXXH+31L8e8BOrAprBvqtmPrONRNglzW/V0Y=",
         "owner": "30350n",
         "repo": "nixos-core",
-        "rev": "6508b5da0aae7e50919a54824cb324b79f35e1f6",
+        "rev": "c479546e9b978e7f6c444f466404eb5de6400404",
         "type": "github"
       },
       "original": {
@@ -175,16 +175,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1777673416,
-        "narHash": "sha256-5c2POKPOjU40Kh0MirOdScBLG0bu9TAuPYAtPRNZMBs=",
+        "lastModified": 1780203844,
+        "narHash": "sha256-K5sT4jTpGs15ADhviMKNBH38REpPf5Q6mM1+N6cArVE=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "26ef669cffa904b6f6832ab57b77892a37c1a671",
+        "rev": "b51242d7d43689db2f3be91bd05d5b24fbb469c4",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-25.11",
+        "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -240,16 +240,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1777292593,
-        "narHash": "sha256-1G5VZu5r7vJXR4/vBNdoqd7qvJXVwg3Lc6GSk6HmyPo=",
-        "owner": "30350n",
+        "lastModified": 1780420379,
+        "narHash": "sha256-0iypZYMc58v5lBS4dDdMqswd6QFFdTfd74OlEZgLlws=",
+        "owner": "stevenblack",
         "repo": "hosts",
-        "rev": "66180dae893a1cadf1ef1da5cae5700f9a9ba33d",
+        "rev": "6ea99ec2e3056c7aaf9e7a779c9f6a112e6cf900",
         "type": "github"
       },
       "original": {
-        "owner": "30350n",
-        "ref": "unbound-confs-rework",
+        "owner": "stevenblack",
         "repo": "hosts",
         "type": "github"
       }
