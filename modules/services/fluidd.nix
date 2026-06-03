@@ -35,6 +35,9 @@ in {
         header /index.html Cache-Control "no-store, no-cache, must-revalidate"
 
         ${lib.concatMapAttrsStringSep "" (name: host: ''
+            handle_path /${name}/webcam* {
+                reverse_proxy http://${host}:8080
+            }
             handle_path /${name}* {
                 reverse_proxy http://${host}:7125
             }
