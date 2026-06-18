@@ -7,14 +7,14 @@
     cfg = config.services.inventree;
 in {
     imports = [
-        "${flake-inputs.nixpkgs-inventree}/nixos/modules/services/misc/inventree.nix"
+        "${flake-inputs.nixpkgs-unstable}/nixos/modules/services/misc/inventree.nix"
     ];
 
     services.inventree = {
         enable = true;
+        package = pkgs.unstable.inventree;
         adminPasswordFile = "/persist/passwords/inventree-admin";
         domain = "inventree.home.internal";
-        package = pkgs.unstable.inventree;
     };
 
     services.caddy = let
