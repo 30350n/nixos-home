@@ -19,4 +19,6 @@
             inherit (config.services.immich) user;
         }
     ];
+
+    nixpkgs.config.permittedInsecurePackages = ["immich-2.7.5"]; # remove when updating from 26.05
 }

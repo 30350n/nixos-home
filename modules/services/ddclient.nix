@@ -5,8 +5,8 @@
             src = pkgs.fetchFromGitHub {
                 owner = "ddclient";
                 repo = "ddclient";
-                rev = "533f1f3ef4bda2fefc66ca704175158b9f59e0bc";
-                sha256 = "u0ve3mttU9CkstfQmwER+MysIlA4YIWL53OQxgICmOo=";
+                rev = "v4.0.1-rc.1";
+                hash = "sha256-VPZnE34Mz2QqMrLA2ZDapcc8zfvBQhHMAw3w056lAM8=";
             };
         });
         protocol = "hetzner";
