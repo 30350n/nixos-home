@@ -12,9 +12,6 @@
         protocol = "hetzner";
         passwordFile = "/persist/passwords/hetzner";
         zone = "30350n.de";
-        domains = [
-            "home.30350n.de"
-            "mc.30350n.de"
-        ];
+        domains = ["home.30350n.de"];
     };
 }
