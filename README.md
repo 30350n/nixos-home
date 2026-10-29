@@ -30,5 +30,7 @@
 
 ### DNS Server
 
-- DNSv4 Server: `192.168.178.2`
-- FRITZ!Box Setting: [Home Network -> Network -> Network Settings -> IPv4 Settings -> Local DNS server](https://fritz.box/#boxnet)
+FRITZ!Box Settings: *Home Network -> Network -> Network Settings*
+
+- DNSv4 Server: `192.168.178.2` ([*IPv4 Settings -> Local DNS server*](http://fritz.box/#boxnet))
+- DNSv6 Server: `fe80::1e83:41ff:fe31:d608` ([*IPv6 Settings -> DNSv6 Server in the Home Network*](http://fritz.box/#boxnet_ipv6))
